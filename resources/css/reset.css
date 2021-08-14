@@ -1,0 +1,529 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+body {
+  background-color: #ecf0f1;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.mobile {
+  display:none;
+}
+.header-content .button{
+  display:none;
+}
+
+/* header styles */
+.desktop_logo {
+  letter-spacing: 3px;
+  font-size: 25px;
+}
+.header-content {
+  font-family: Roboto;
+  font-size: 16px;
+  color:#4A4A4A;
+  line-height: 1.6;
+  height: 85px;
+  
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin:0 30px;
+}
+.icon{
+width: 21px;
+height: 21px;
+margin-left: 10px;
+
+}
+.desktop li {
+  text-align: center;
+  display:inline-block;
+  
+}
+.desktop {
+  margin-left: 1300px;
+}
+li::before {
+  content:"\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 ";
+}
+
+/*main content styles */
+
+/*banner*/
+
+.banner {
+  background-image: url("../images/banner-landingpage.jpg");
+  height:910px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#sign-up-section {
+  display: flex;
+  align-items: center;
+  
+}
+#sign-up-section .content{
+  background-color: #9DC20A;
+  border:1px solid #979797;
+  border-radius: 4px;
+  width:568px;
+  color:white;
+  text-align: center;
+  padding:30px;
+  margin-left: 100px;
+  margin-top:170px;
+  margin-bottom:170px;
+}
+.cursive {
+  font-size:30px;
+  font-style: oblique;
+}
+
+.striking {
+  font-size:50px;
+  font-family:Rubik;
+  line-height: 1.4;
+}
+.email {
+  font-size:20px;
+  font-family: Roboto;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  margin-top:12px;
+}
+
+.email strong{
+  font-weight: bold;
+}
+.button {
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 600;
+  line-height: 1.4;
+  width: 408px;
+  height: 64px;
+  background-color: #4A4A4A;
+  border-radius: 4px;
+  text-align: center;
+  display: block;
+  margin:auto;
+  color:white;
+  border:none;
+  box-shadow:none;
+  margin-top:26px;
+}
+.button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+/*feature section styles*/ 
+#features-section {
+  display:flex;
+  justify-content: center;
+}
+.feature {
+  height: 635px;
+  color:#4A4A4A;
+  font-size:36px;
+  line-height: 1.2;
+  width: 635px;
+  margin:38px;
+  text-align: center;
+  background-color: white;
+}
+.feature h2 {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 36px;
+
+}
+.feature h3 {
+  font-family: Roboto;
+  font-size:16px;
+  margin-left:50px;
+  margin-right: 50px;
+}
+.image-container img{
+  height: 100%;
+  width: 575px;
+  margin:32px 32px 40px 32px;
+}
+
+/* filter section styles */
+
+#filters-section {
+  color:white;
+  text-align: center;
+  margin-top: 46px;
+  background-color: #4A4A4A;
+}
+#filters-section h2{
+  font-size:36px;
+  font-family:Roboto;
+  font-weight: bold;
+  line-height: 1.4;
+  opacity: 100%;
+  margin-top: 64px;
+  
+}
+#filters-section h3{
+  font-size:16px;
+  font-family:Roboto;
+  line-height: 1.4;
+  margin-bottom: 80px;
+}
+#filters-section img {
+  margin:0px;
+  width: 470px;
+  height: 470px;
+  margin-bottom: 64px;
+  
+}
+.images-container {
+  display: flex;
+  margin:1%;
+  justify-content: center;
+}
+
+/* quote section stytles */
+
+#quotes-section {
+  color:#4A4A4A;
+  font-size: 30px;
+  font-family: 'Libre Baskerville';
+  line-height: 1.1;
+  text-align: center;
+  margin: 80px 0 80px 0;
+}
+.quote-citation {
+  margin-left:30px;
+}
+
+/*footer styles */ 
+
+footer {
+  color:white;
+  font-size: 12px;
+  font-family: Roboto;
+  background-color: #9b9b9b;
+  height: 62px;
+  display: flex;
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.copyright, .location {
+  margin: 0 32px 0 32px;
+}
+
+
+/*media queries */
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px)
+  {
+  /*header-style-tablet*/
+  
+ 
+  .mobile img {
+    display: none;
+  }
+ 
+  .desktop {
+    margin-left:300px;
+  }
+
+
+  
+  .header-content {
+    width:97%;
+  }
+  .header-content .button{
+    margin:0 10px 0 20px;
+    display:block;
+    width: 90px;
+    height: 40px;
+    background-color: #9DC20A;
+    font-weight:lighter;
+  
+  }
+
+  /*main-content-styles-tablet*/
+  
+  .email {
+    display: none;
+  }
+  .banner {
+    display: flex;
+    justify-content: center;
+  }
+  #sign-up-section .content {
+    background-color: transparent;
+    border:0px;
+    margin:auto;
+
+   
+    
+    
+  }
+
+  .header h2 {
+    font-size: 40px;
+    color:white;
+  }
+  .striking {
+    font-size: 60px;
+  }
+
+  .banner {
+    background-image: url("../images/banner-landingpage.jpg");
+    height: 500px;
+    width: 100%;
+    background-size:cover;
+  }
+
+/* feature section tablet*/
+
+.feature {
+  text-align: left;
+  
+  
+}
+.image-container img {
+  height: 380px;
+ 
+  width: 360px;
+}
+.feature h2  {
+  margin-left: 30px;
+}
+.feature h3 {
+  margin-left: 30px;
+}
+
+/*filter section*/
+
+#filters-section img {
+  margin:0px;
+  width: 245px;
+  height: 245px;
+ 
+  
+}
+
+#quotes-section  {
+  font-size: 40px;
+  
+  
+}
+
+
+  }
+
+
+
+  /* mobile media query*/ 
+
+@media only screen and (device-width: 360px) 
+  and (device-height: 640px)  {
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+  }
+  .icon, .desktop {
+    margin:0;
+  }
+ 
+  .mobile {
+   display: block;
+  
+ 
+    margin:0;
+    text-align: center;
+  }
+  .mobile li {
+    display: inline-block;
+   
+    margin-right: 155px;
+    list-style: none;
+    padding:0;
+
+  }
+ .mobile img{
+   
+   width: 73px;
+   height: 73px;
+ }
+  .desktop, .desktop_logo {
+    display: none;
+  }
+  
+  .header-content {
+    width:95%;
+  }
+  .header-content .button{
+    display: block;
+    margin:0;
+    padding:0;
+    font-size: 25px;
+    width: 120px;
+    height: 60px;
+    background-color: #9DC20A;
+    font-weight:lighter;
+  
+  }
+
+  /*main-content-styles-mobile*/
+  
+  .email {
+    display: none;
+  }
+  .banner {
+    display: flex;
+    justify-content: center;
+  }
+  #sign-up-section .content {
+    background-color: transparent;
+    border:0px;
+    margin:auto;
+
+  
+  }
+
+  .header h2 {
+    font-size: 40px;
+    color:white;
+  }
+  .striking {
+    font-size: 60px;
+  }
+
+  .banner {
+    background-image: url("../images/banner-landingpage.jpg");
+    height: 500px;
+    width: 100%;
+    background-size:cover;
+  }
+
+/* feature section mobile*/
+#features-section {
+ display: inline;
+}
+.feature {
+  text-align: left;
+  width: 92%;
+  height: 700px ;
+  
+}
+.image-container img {
+  height:450px;
+  
+  width: 92%;
+}
+.feature h2  {
+  margin-left: 30px;
+  font-size: 40px;
+}
+.feature h3 {
+  margin-left: 30px;
+  font-size: 30px;
+}
+
+/*filter section*/
+#filters-section {
+  overflow: hidden;
+  width: 100% ;
+  margin:0;
+
+}
+#filters-section img {
+
+  margin:0;
+  width: 331px;
+  height: 331px;
+ 
+  
+}
+#filters-section h2 {
+  font-size: 35px;
+}
+#filters-section h3 {
+  font-size:28px;
+}
+.images-container {
+  display: flex;
+  margin:0;
+
+  justify-content: initial;
+}
+#quotes-section  {
+  font-size: 48px;
+  display: inline-block;
+  margin-top:35px;
+}
+#quotes-section img {
+  margin-top: 40px;
+  width: 290px;
+  height: 80px ;
+}
+
+
+}
